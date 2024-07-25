@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  /* padding: 0; */
+}
+
+.hastag-header {
+  color: #ffffff;
+  background-color: #065fd4;
+  padding: 4rem;
+  background-image: url("/06-YOUTUBE-SECTION-CSS/images/background.png");
+  background-size: 260px;
+  background-position: 100%;
+  background-position-x: 100%;
+  background-position-y: -160px;
+  background-repeat: no-repeat;
+}
+
+.hastag-header h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hastag-header img {
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 6px solid #ffffff;
+  border-radius: 100%;
+  vertical-align: middle;
+  /* margin-right: -1.5rem; */
+  cursor: pointer;
+}
+
+.hastag-header img:hover {
+  transform: scale(1.2) translateY(-0.5rem);
+  transition: 0.3s ease;
+}
+
+/* adjacent sibling selector */
+img + img {
+  margin-left: -1.5rem;
+}
+
+.hastag-header span {
+  font-size: 1.5rem;
+}
