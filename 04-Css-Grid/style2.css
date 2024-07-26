@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+h1 {
+  text-align: center;
+  text-shadow: 7px 4px 7px rgba(0, 0, 0, 0.25);
+  font-weight: 400;
+}
+.container {
+  display: grid;
+  gap: 1.5rem;
+  margin-inline: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin-inline: auto;
+  grid-template-areas:
+    "Purple "
+    "Orange "
+    "Green "
+    "Blue"
+    "Violet ";
+}
+.box {
+  min-height: 200px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 4rem;
+}
+.box-1 {
+  background-color: #ba56f6;
+  grid-area: Purple;
+}
+.box-2 {
+  background-color: #ff6161;
+  grid-area: Orange;
+}
+.box-3 {
+  background-color: #505cca;
+  grid-row: Blue;
+}
+.box-4 {
+  background-color: #3dad99;
+  grid-area: Green;
+}
+.box-5 {
+  background-color: #ba56f6;
+  grid-area: Violet;
+}
+
+/* tablet
+design --- 600 px */
+@media (min-width: 600px) {
+  .container {
+    grid-template-areas:
+      "Purple Purple"
+      "Orange Blue"
+      "Green Blue"
+      "Violet Violet";
+  }
+  .box {
+    min-height: 300px;
+  }
+}
+
+/* desktop design --- 1000 px */
+@media (min-width: 1000px) {
+  .container {
+    grid-template-areas:
+      "Purple Purple  Orange Blue"
+      "Green Violet Violet Blue";
+  }
+  .box {
+    min-height: 300px;
+  }
+}
