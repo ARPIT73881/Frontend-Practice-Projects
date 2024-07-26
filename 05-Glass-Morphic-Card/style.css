@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(205, 100%, 7%);
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  margin: 0;
+}
+
+main {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.circle {
+  border-radius: 100%;
+  position: absolute;
+}
+
+.circle-one {
+  width: 120px;
+  height: 120px;
+  background-image: radial-gradient(
+    69.62% 69.62% at 50.36% 50%,
+    rgb(234, 139, 250) 0%,
+    rgb(117, 38, 245) 100%
+  );
+  top: -50px;
+  left: -50px;
+}
+.circle-two {
+  width: 360px;
+  height: 360px;
+  background-image: radial-gradient(
+    63.76% 63.76% at 50% 50%,
+    rgb(255, 0, 199) 0%,
+    rgb(189, 149, 255) 0.009999999747378752%,
+    rgb(166, 97, 255) 32.29166567325592%,
+    rgb(97, 0, 255) 98.58869314193726%
+  );
+  top: -125px;
+  right: -260px;
+}
+.circle-three {
+  width: 220px;
+  height: 220px;
+  background-image: radial-gradient(
+    67.47% 67.47% at 50% 50%,
+    rgb(254, 208, 255) 0%,
+    rgb(127, 0, 255) 100%
+  );
+  bottom: -100px;
+  left: -150px;
+}
+
+.card-container {
+  position: relative;
+}
+
+.card {
+  max-width: 400px;
+  opacity: 0.9;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 3px 18px -1px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(
+    148deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+
+  padding: 18px;
+}
+
+.card-content {
+  border: 0.74px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.card-image {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.card-text {
+  padding: 24px 18px;
+}
+
+.tag-heart-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag-heart-container img {
+  cursor: pointer;
+}
+
+.tag {
+  color: #ffd147;
+  padding: 2px 6px;
+  border-radius: 5px;
+  background: rgba(241, 198, 68, 0.24);
+}
+
+.card-title {
+  font-size: 18px;
+}
+
+.card-subtitle {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating-value {
+  color: #f1c644;
+  font-size: 14px;
+  margin-inline: 8px;
+}
+
+.rating-count {
+  color: #dbdbdb;
+  font-size: 13px;
+}
+
+.card-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  gap: 8px;
+  padding-block: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.card-button:hover {
+  opacity: 1;
+}
